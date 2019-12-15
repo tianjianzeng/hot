@@ -1,0 +1,118 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+body { background:scroll 0 0 #FFFFFF; color: #333; font: 12px/150%  "Microsoft YaHei",Arial,Verdana; }
+html,body,div, span,input,iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    margin: 0px;
+    padding: 0px;
+}
+table {border-collapse:collapse;}
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+[hidden] { display: none; }
+
+ul{zoom:1;*zoom:1;_zoom:1; list-style: none;}
+img{border:0px;max-width: 100%;}
+.clearfix:after{ content:"."; display:block; clear:both; height:0; overflow:hidden;}
+.clearfix{ zoom:1;}
+
+select {font-family : Trebuchet MS;} /*select垂直居中*/
+input,textarea {outline:none;}
+
+a{text-decoration:none; color:#035db3;}
+
+
+/*设置选中样式 IE适用9及以上版本*/
+::selection {color:#fff;background:#6C6;}
+::-moz-selection {color:#fff;background:#6C6;}
+::-webkit-selection {color:#fff;background:#6C6;}
+
+/*圆角*/
+.radius3 {border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;}
+.radius5 {border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+.radius8 {border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px;}
+.radius10 {border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;}
+.radius50 {border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;}
+
+/*字体设置*/
+.f12 {font-size: 12px;}
+.f14 {font-size: 14px;}
+.f16 {font-size: 16px;}
+.f18 {font-size: 18px;}
+.f20 {font-size: 20px;}
+.f22 {font-size: 22px;}
+.f24 {font-size: 24px;}
+.f26 {font-size: 26px;}
+.f28 {font-size: 28px;}
+.f30 {font-size: 30px;}
+.f32 {font-size: 32px;}
+.f34 {font-size: 34px;}
+.f58 {font-size: 58px;}
+.yh {font-family: "Microsoft YaHei","微软雅黑";font-weight: normal;}
+.st {font-family: "\5b8b\4f53","宋体";}
+.Arial{font-family: Arial;}
+.bold {font-weight: bold;}/*文字加粗*/
+.center {text-align: center;}/*文字剧中*/
+/*颜色 */
+.white {color: #fff;}
+.black {color: #333;}
+.black01 {color: #191919;}
+.blue  {color:#0d86f9;}
+.blue01{ background-color: #3078e9;}
+.gray{background:#f8f8f8;}
+.red   {color:#e0281a;}
+.green {color:#39ac0c;}
+.ellipsis {white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;} /*文字溢出省略号显示*/
+.pointer {cursor: pointer;}
+
+/*标签过渡*/
+li:hover,a:hover,input:hover {transition: linear 0.2s;}
+
+/*去掉IE浏览器输入框叉号*/
+input::-ms-clear{display:none;}
+
+/*css3背景图片100%填充 不兼容IE8以及IE8以下版本*/
+.backgroundStretch {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment:fixed;
+	_background-attachment:fixed;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+/*背景颜色渐变*/
+.mylinear {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=red); /*IE 6 7 8 9  gradientType的值0表示纵向，1表示横向*/ 
+	background: -ms-linear-gradient(top, #fff,  #0000ff); /* IE 10 */
+	background:-moz-linear-gradient(right,#b8c4cb,#f6f6f8);/*火狐*/ 
+	background:-webkit-gradient(linear, 100% 0%, 0% 0%,from(#b8c4cb), to(#f6f6f8));/*谷歌*/ 
+	background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#fff), to(#0000ff));      /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(left, #fff, #0000ff);   /*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(left, #fff, #0000ff);  /*Opera 11.10+*/	
+}
+
+.fl{ float:left; display: inline;}/*左浮动公用样式*/
+.fr{ float:right; display: inline;}  /*右浮动公用样式*/
+.clear{clear:both; visibility: hidden;} /*清除浮动公用样式*/
+.mar{margin:0 auto;}/*水平居中公用样式*/
+.overflow {overflow: hidden;}
+.re{position:relative; z-index: 1;left: 0;top: 0;} /*相对定位样式*/
+.ab{ position:absolute; z-index: 10;}/*绝对定位公用样式*/
+.fixed{position: fixed; z-index: 100;}
+.dis{display:block;}
+.nodis{display:none;}
+.center{text-align: center;}
+
+.zIndexMax {z-index: 100000000;}
+.noBg {background: none;}
+.noMargin {margin: 0;}
+.noBorder {border: none;}
+.noPadding {padding: 0;}
+.noResize {resize: none;}
+
+
+
+
+

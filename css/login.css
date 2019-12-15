@@ -1,0 +1,13 @@
+html, body { height: 100%; width: 100%; background: url(../images/bg.png) no-repeat center center; background-size: cover; position: relative; padding-top: 0.1px; text-align: center; }
+.wrapper { position: absolute; left: 50%; top: 50%; margin-left: -186px; margin-top: -298.5px; }
+h5 { display: inline-block; font-size: 48px; line-height: 48px; font-weight: bold; color: #fff; }
+.content { width: 286px; height: 344px; background-color: #fff; margin: 85px 0 0 0; padding-top: 0.1px; }
+.logo { width: 104px; height: 57px; border: 1px solid #ccc; margin: 33px auto 33px; }
+.user, .pwd { width: 224px; background-repeat: repeat-x; height: 46px; line-height: 46px; border: solid 1px #ccc; font-size: 13px; color: #798997; }
+.user, .pwd { margin: 0 auto 21px; }
+.user div, .pwd div { float: left; width: 48px; height: 100%; border-right: 1px solid #ccc; }
+.user div img { width: 21px; height: 22px; margin: 12px 0 0 14px; float: left; }
+.pwd div img { width: 17px; height: 21px; margin: 13px 0 0 15px; float: left; }
+.user input, .pwd input { float: left; width: 154px; height: 46px; line-height: 46px; border: none; outline: none; padding: 0 0 0 16px; }
+.btn { width: 100%; border-top: 1px solid #ccc; }
+.btn input { display: block; width: 223px; height: 45px; background: url(../images/btn_bg.png) no-repeat center center; background-size: 223px 45px; line-height: 45px; text-align: center; border: none; outline: none; color: #fff; font-size: 14px; margin: 21px auto; border: 1px solid #ccc; }

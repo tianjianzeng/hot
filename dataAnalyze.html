@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>决策引擎系统--系统管理</title>
+	<link rel="stylesheet" type="text/css"  href="css/public.css">
+	<link rel="stylesheet" type="text/css"  href="css/manage.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/modules/layer/default/layer.css">
+	<link rel="stylesheet" type="text/css" href="css/LCalendar.css">
+</head>
+<body>
+	<!-- 框架布局 -->
+	<div id="wrapper">
+		<div id="right">
+			<!-- 右侧内容开始 -->
+			<div class="right_in"> 
+				<!-- 用户中心模块开始 -->
+				<div class="first border-b">
+				     <ul>
+				     	<li class="now">压力分析</li>
+				     	<li>温度分析</li>
+				     	<li>能耗分析</li>
+				     	<li>对比分析</li>
+				     	<li>异常分析</li>
+				     </ul>
+				</div> 
+				<!-- 内容开始 -->
+				<div class="in_content">
+					<div class="con">
+					    <div class="con_title">
+                            <div class="choose mr re">
+	                            <div class="choose_title fl ">站点：</div>
+	                            <div class="choose_box fl re down border02" id="choose_box">
+	                                全部
+	                            </div>
+                            </div>
+                            <div class="parambox_year mr re ">
+                            	<ul class="fl ">
+	                                <li class="fl marl01">起始时间：</li>
+	                                <li class="fr border02 marl"><input id="startTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                            	<ul class="fl">
+	                                <li class="fl marl01">终止时间：</li>
+	                                <li class="fr border02 marl"><input id="endTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                                <a href="detail.html" class="button ml02" >分析</a>    
+                            </div>
+                           
+					    </div>
+					    <!-- 折现图 -->
+					    <div class="con_chart">
+					    	<div id="main"></div>
+					    </div>
+					</div>
+					<!-- 第一个内容结束 -->
+					<div class="con nodis">
+				    	<!-- 内容 -->
+						<div class="con_title mb">
+                            <div class="choose mr re">
+	                            <div class="choose_title fl ">站点：</div>
+	                            <div class="choose_box fl re down border02" id="choose_box">
+	                                全部
+	                            </div>
+                            </div>
+                            <div class="parambox_year mr re">
+                            	<ul class="fl ">
+	                                <li class="fl marl01">起始时间：</li>
+	                                <li class="fr border02 marl"><input id="startTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                            	<ul class="fl">
+	                                <li class="fl marl01">终止时间：</li>
+	                                <li class="fr border02 marl"><input id="endTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                                <a href="#" class="button ml02" >分析</a> 
+                            </div>	        
+					    </div>
+					    <!-- 折现图 -->
+					    <div class="con_chart" id="con_chart01">
+					    	<div id="main01"></div>
+					    </div> 
+					</div>
+					<!-- 第二个内容结束 -->
+					<div class="con nodis">
+		                <!-- 内容 -->
+						<div class="con_title mb">
+                            <div class="choose mr re">
+	                            <div class="choose_title fl ">站点：</div>
+	                            <div class="choose_box fl re down border02" id="choose_box">
+	                                全部
+	                            </div>
+                            </div>
+                            <div class="parambox_year mr re">
+                            	<ul class="fl ">
+	                                <li class="fl marl01">起始时间：</li>
+	                                <li class="fr border02 marl"><input id="startTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                            	<ul class="fl">
+	                                <li class="fl marl01">终止时间：</li>
+	                                <li class="fr border02 marl"><input id="endTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                                <a href="#" class="button ml02" >分析</a> 
+                            </div>	        
+					    </div>
+					    <!-- 折现图 -->
+					    <div class="con_chart" >
+					    	<div id="main02"></div>
+					    </div>  
+					</div>
+					<!-- 第三个内容结束 -->
+					<div class="con nodis">
+		                <!-- 内容 -->
+						<div class="con_title mb">
+                            <div class="choose mr re">
+	                            <div class="choose_title fl ">站点：</div>
+	                            <div class="choose_box fl re down border02" id="choose_box">
+	                                全部
+	                            </div>
+                            </div>
+                            <div class="parambox_year mr re">
+                            	<ul class="fl ">
+	                                <li class="fl marl01">起始时间：</li>
+	                                <li class="fr border02 marl"><input id="startTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                            	<ul class="fl">
+	                                <li class="fl marl01">终止时间：</li>
+	                                <li class="fr border02 marl"><input id="endTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                                <a href="#" class="button ml02" >分析</a> 
+                            </div>	        
+					    </div>
+					    <!-- 折现图 -->
+					    <div class="con_chart" >
+					    	<div id="main03"></div>
+					    </div>  
+					</div>
+					<!-- 第四个内容结束 -->
+					<div class="con nodis">
+		                <!-- 内容 -->
+						<div class="con_title mb">
+                            <div class="choose mr re">
+	                            <div class="choose_title fl ">站点：</div>
+	                            <div class="choose_box fl re down border02" id="choose_box">
+	                                全部
+	                            </div>
+                            </div>
+                            <div class="parambox_year mr re">
+                            	<ul class="fl ">
+	                                <li class="fl marl01">起始时间：</li>
+	                                <li class="fr border02 marl"><input id="startTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                            	<ul class="fl">
+	                                <li class="fl marl01">终止时间：</li>
+	                                <li class="fr border02 marl"><input id="endTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+	                            </ul>
+                                <a href="#" class="button ml02" >分析</a> 
+                            </div>	        
+					    </div>
+					    <!-- 折现图 -->
+					    <div class="con_chart" >
+                            <div id="main04" class="fl">1</div> 
+                            <div id="main05"  class="fr">2</div>                  
+					    </div>  
+					</div>
+					<!--分页-->
+					<div id="demo0"></div>
+				</div>
+				<!-- 内容结束 -->
+			</div>
+			<!-- 右侧内容结束 -->
+		</div>
+	</div>
+    <!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/LCalendar.js"></script>
+    <script type="text/javascript" src="js/chart_highcharts.js"></script>
+    <script type="text/javascript" src="js/chart_highcharts_w.js"></script>
+    <script type="text/javascript" src="js/echarts.min02.js"></script>
+    <script type="text/javascript" src="js/randerChart.js"></script>
+    <script type="text/javascript" src="js/randerChart01.js"></script>
+    <script type="text/javascript" src="js/randerChart02.js"></script>
+    <script type="text/javascript" src="js/randerChart03.js"></script>
+    <script type="text/javascript" src="js/randerChart04.js"></script>
+    <script type="text/javascript" src="js/randerChart05.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dFexIpV6dVUeNQyFY8rfZGh4"></script>
+    <script src="js/map.js"></script>
+	<script>
+	    //右侧一级tab
+	    $('.first > ul >li').click(function (){
+            firstFval = $(this).index();
+            $(this).addClass('now').siblings().removeClass('now');
+            $('.in_content>.con').eq(firstFval).show().siblings().hide(); 
+        });
+        // 右侧二级tab
+        $('.second>ul>li').click(function (){
+            secondtFval = $(this).index();
+            $(this).addClass('select').siblings().removeClass('select');
+            $('.con>.con_second').eq(secondtFval).show().siblings('.con_second').hide(); 
+        });
+        var width=document.body.clientWidth-50;
+        var height=document.body.clientHeight-150;
+        $("#main").width(width);
+        $("#main").height(height);
+        $("#main01").width(width);
+        $("#main01").height(height);
+        $("#main02").width(width);
+        $("#main02").height(height);
+        $("#main03").width(width);
+        $("#main03").height(height);
+        $("#main04").width(width*0.45);
+        $("#main05").width(width*0.55-50);
+        $("#main04").height(height);
+        $("#main05").height(height);
+        
+	</script> 
+</body>
+</html>

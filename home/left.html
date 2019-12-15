@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>决策引擎系统</title>
+    <link rel="stylesheet" type="text/css"  href="../css/public.css">
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css">
+    <link rel="stylesheet" type="text/css"  href="../css/manage.css">
+</head>
+<body>
+    <!-- 框架布局 -->
+    <div id="wrapper">
+        <div id="right">
+            <!-- 右侧内容开始 -->
+            <div class="right_in"></div>
+            <!-- 右侧内容结束 -->
+        </div>
+        <!-- 左侧内容开始 -->
+        <div id="left">
+            <div class="list">
+                <a href="../realTime.html"  target="main"  class="actvie">实时监控</a>
+                <a href="../controlMg.html" target="main"  class="control">控制管理</a>
+                <a href="../historyData.html" target="main" class="history">历史数据</a>
+                <a href="../dataAnalyze.html" target="main" class="data">数据分析</a>  
+                <a href="../siteMg.html" target="main" class="site">站点管理</a>
+                <a href="../maintainMg.html" target="main" class="maintain">维护管理</a> 
+                <a href="../reportMg.html" target="main" class="report">报表管理</a>
+                <a href="../systemMg.html" target="main" class="system">系统管理</a>   
+           </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script>
+        //右侧一级tab
+        $('.list >a').click(function (){
+            $(this).addClass('actvie').siblings().removeClass('actvie');
+        });
+    </script>
+
+</body>
+</html>
+
+

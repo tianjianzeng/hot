@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>决策引擎系统--系统管理</title>
+</head>
+<style>
+           .table-scroll {
+                width: calc(100% - 5px);
+                overflow-x: scroll;
+                white-space: nowrap;
+            }
+            .table-scroll table {
+                table-layout: fixed;
+                width: calc(100% - 10px);
+                background-color:darkseagreen ;
+            }
+
+            .table-scroll thead {
+                display: table-row;
+                background-color: bisque;
+            }
+
+            .table-scroll tbody {
+                overflow-y: scroll;
+                overflow-x: hidden;
+                display: block;
+                height: calc(100vh - 300px);
+            }
+            .table-scroll th,td {
+                width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                min-width: 160px;
+                border: 1px solid #808080;
+            }
+
+            h4, h5 {
+                color: cornflowerblue;
+            }
+</style>
+<body>
+        <h4>完成效果：1.固定表头 2.table横纵滚动条 3.table列宽自适应 4.table内容不换行</h4>
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                    <th>title1</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>body1 body1 body1 body1 body1 body1 body1 body1 body1 body1 body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1 body1 body1 body1 body1 body1 body1 body1 body1 body1 body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                        <td>body1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script  type="text/javascript" charset="utf-8" >
+         $(function() {
+            $('.table-scroll').scroll(function() {
+                  $('.table-scroll table').width($('.table-scroll').width() 
+                  + $('.table-scroll').scrollLeft());
+                });
+
+            var tableTdWidths = new Array();
+            var tableWidth = 0;
+            var tableTr0Width = 0;
+            var tableThNum = 0;
+            var tableTr1Width = 0;
+
+                tableWidth = $('.table-scroll table').css('width').replace('px','');
+                tableThNum = $('.table-scroll tr:eq(0)').children('th').length;
+
+            if ($('.table-scroll tr').length == 1) { // header only
+                if (tableWidth > tableTr0Width) {
+                    $('.table-scroll tr:eq(0)').children('th').each(function(i){
+                        $(this).width(parseInt(($(this).css('width').replace('px','')) 
+                        + parseInt(Math.floor((tableWidth - tableTr0Width) / tableThNum))) + 'px');
+                    });
+                }
+            } else { // header and body
+                tableTr1Width = $('.table-scroll tr:eq(1)').css('width').replace('px','');
+                    $('.table-scroll tr:eq(1)').children('td').each(function(i){
+                    tableTdWidths[i]=$(this).css('width').replace('px','');
+                });
+                $('.table-scroll tr:eq(0)').children('th').each(function(i) {
+            if(parseInt($(this).css('width').replace('px', '')) >
+                parseInt(tableTdWidths[i])) {
+                tableTdWidths[i] = $(this).css('width').replace('px','');
+                    }
+                });
+
+                if (tableWidth > tableTr1Width) {
+                    //set all th td width
+                    $('.table-scroll tr').each(function(i){
+                            $(this).children().each(function(j){
+                                $(this).css('min-width',(parseInt(tableTdWidths[j]) 
+                                + parseInt(Math.floor((tableWidth - tableTr1Width) / 
+                                tableThNum))) + 'px');
+                            });
+                    });
+                } else {
+                    //method 1 : set all th td width
+                    $('.table-scroll tr').each(function(i){
+                            $(this).children().each(function(j){
+                                $(this).css('min-width',tableTdWidths[j] + 'px');
+                            });
+                    });
+                }
+            }
+            });     
+    </script>
+</body> 
+</html>    

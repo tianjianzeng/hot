@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>决策引擎系统--系统管理</title>
+    <link rel="stylesheet" type="text/css"  href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body>
+    <div class="page-wrapper">
+         <div id="left">
+            <div class="white">
+                logo
+            </div>
+            <h3 class="white f28 center">决策引擎系统</h3>
+            <ul>
+                 <li><a href="#" class="leve01 bg">模块管理</a><span class="up_layer" onclick="sideInforShow(this,event)"></span></li>
+                 <ul class="second_level dis" >
+                      <li class="re"><a href="../manage_index.html" target="main">系统管理</a><span class="nowpage"></span></li>
+                      <li class="re"><a href="../manage_version.html" target="main">上线发布</a> </li>
+                 </ul>
+                 <li><a href="../research_index.html" target="main" class="leve02">研究模块</a><span class="now"></span></li>
+                 <li><a href="#" class="leve03">应用模块</a></li>
+           </ul>
+         </div>
+         <div class="container-fluid">
+             <iframe id="content" src="http://www.baidu.com/" width="100%" height="100%"></iframe>
+         </div>
+    </div>
+    <script>
+        reSetSize();
+        window.onresize = reSetSize;
+        function reSetSize() {
+            var windowsHeight = window.innerHeight;
+            document.getElementById("content").style.height = (windowsHeight-框架顶部高度) + "px";
+        }
+    </script>
+</body>
+</html>
